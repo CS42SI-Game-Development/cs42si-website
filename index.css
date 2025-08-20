@@ -117,7 +117,7 @@ h6 {
   font-weight: 300;
   margin-bottom: 2.5rem;
   opacity: 0.9;
-  max-width: 600px;
+  max-width: 800px;
   margin-left: auto;
   margin-right: auto;
   animation: fadeInUp 1s ease-out 0.2s both;
@@ -141,16 +141,6 @@ h6 {
 .hero-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-}
-
-/* Button Styles */
-.btn-primary {
-  background: linear-gradient(45deg, #8c1515, #b1040e);
-  border: none;
-}
-
-.btn-primary:hover {
-  background: linear-gradient(45deg, #7a1212, #8c1515);
 }
 
 .btn-outline-light {
@@ -190,56 +180,6 @@ a:hover {
   }
 }
 
-/* Tic Tac Toe Game Styles */
-.tic-tac-toe-board {
-  display: inline-block;
-  background: #f8f9fa;
-  border: 3px solid #8c1515;
-  border-radius: 10px;
-  padding: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}
-
-.board-row {
-  display: flex;
-}
-
-.cell {
-  width: 80px;
-  height: 80px;
-  border: 2px solid #8c1515;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2.5rem;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
-  background: white;
-}
-
-.cell:hover {
-  background-color: #f0f0f0;
-}
-
-.cell.x {
-  color: #8c1515;
-}
-
-.cell.o {
-  color: #b1040e;
-}
-
-.cell.winning {
-  background-color: #d4edda;
-  border-color: #28a745;
-}
-
-.game-status {
-  color: #8c1515;
-  font-weight: 600;
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
   .hero-title {
@@ -255,12 +195,6 @@ a:hover {
     margin: 0.5rem auto;
     max-width: 250px;
   }
-
-  .cell {
-    width: 60px;
-    height: 60px;
-    font-size: 2rem;
-  }
 }
 
 @media (max-width: 576px) {
@@ -274,11 +208,5 @@ a:hover {
 
   .hero-section {
     min-height: 500px;
-  }
-
-  .cell {
-    width: 50px;
-    height: 50px;
-    font-size: 1.5rem;
   }
 }
