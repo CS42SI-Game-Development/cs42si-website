@@ -1,0 +1,259 @@
+/* ===== CONSOLIDATED STYLES ===== */
+
+/* Base Styles */
+body {
+  font-family: Lato;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Quicksand;
+  font-weight: 800;
+}
+
+/* Navbar Styles */
+.navbar-custom {
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1030;
+}
+
+.navbar-custom .navbar-brand {
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  font-weight: 700;
+}
+
+.navbar-custom .navbar-nav .nav-item .nav-link {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+
+.navbar-left {
+  width: 40px;
+  vertical-align: middle;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Hero Section Styles */
+.hero-section {
+  position: relative;
+  height: 100vh;
+  min-height: 600px;
+  background: linear-gradient(135deg, #8c1515 0%, #b1040e 100%);
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/></pattern></defs><rect width="100%" height="100%" fill="url(%23grid)"/></svg>');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding-top: 76px; /* Account for fixed navbar */
+  z-index: 0; /* Ensure hero is behind navbar */
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.hero-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  animation: fadeInUp 1s ease-out;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  font-weight: 300;
+  margin-bottom: 2.5rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  animation: fadeInUp 1s ease-out 0.2s both;
+}
+
+.hero-buttons {
+  animation: fadeInUp 1s ease-out 0.4s both;
+}
+
+.hero-btn {
+  margin: 0.5rem;
+  padding: 0.75rem 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.hero-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Button Styles */
+.btn-primary {
+  background: linear-gradient(45deg, #8c1515, #b1040e);
+  border: none;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(45deg, #7a1212, #8c1515);
+}
+
+.btn-outline-light {
+  border: 2px solid white;
+  color: white;
+}
+
+.btn-outline-light:hover {
+  background: white;
+  color: #8c1515;
+}
+
+/* Footer Styles */
+.bg-black {
+  background-color: #000;
+}
+
+/* Link Styles */
+a {
+  color: #8c1515;
+}
+
+a:hover {
+  color: #7a1212;
+  text-decoration: none;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Tic Tac Toe Game Styles */
+.tic-tac-toe-board {
+  display: inline-block;
+  background: #f8f9fa;
+  border: 3px solid #8c1515;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.board-row {
+  display: flex;
+}
+
+.cell {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #8c1515;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  background: white;
+}
+
+.cell:hover {
+  background-color: #f0f0f0;
+}
+
+.cell.x {
+  color: #8c1515;
+}
+
+.cell.o {
+  color: #b1040e;
+}
+
+.cell.winning {
+  background-color: #d4edda;
+  border-color: #28a745;
+}
+
+.game-status {
+  color: #8c1515;
+  font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .hero-btn {
+    display: block;
+    margin: 0.5rem auto;
+    max-width: 250px;
+  }
+
+  .cell {
+    width: 60px;
+    height: 60px;
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .hero-section {
+    min-height: 500px;
+  }
+
+  .cell {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+  }
+}
