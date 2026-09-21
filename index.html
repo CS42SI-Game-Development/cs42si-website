@@ -1,366 +1,327 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
 
-    <title>From Player to Maker: 2D Engine-Based Game Development</title>
-    <meta http-equiv="Content-Type" content="text/html" />
-    <meta http-equiv="Content-Language" content="en-us" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <title>From Player to Maker: 2D Engine-Based Game Development</title>
+  <meta http-equiv="Content-Type" content="text/html" />
+  <meta http-equiv="Content-Language" content="en-us" />
 
-    <!-- Custom fonts for this template -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Quicksand"
-      rel="stylesheet"
-    />
-    <!-- Custom styles -->
-    <link rel="stylesheet" type="text/css" href="index.css" />
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 
-    <!-- Social sharing image -->
-    <meta property="og:image" content="/class/cs42si/img/logo.png" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:title"
-      content="From Player to Maker: 2D Engine-Based Game Development"
-    />
-    <meta
-      property="og:description"
-      content="Learn 2D game development with Unity in CS42SI. Build games, compete in game jams, and earn college credit."
-    />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:image" content="/class/cs42si/img/logo.png" />
-    <meta
-      name="twitter:title"
-      content="From Player to Maker: 2D Engine-Based Game Development"
-    />
-    <meta
-      name="twitter:description"
-      content="Learn 2D game development with Unity in CS42SI. Build games, compete in game jams, and earn college credit."
-    />
-  </head>
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet" />
+  <!-- Custom styles -->
+  <link rel="stylesheet" type="text/css" href="index.css" />
 
-  <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">
-          <img class="navbar-left" src="img/logo.png" />CS 42SI
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarResponsive"
-          aria-controls="navbarResponsive"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a id="aboutLink" class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a id="syllabusLink" class="nav-link" href="#syllabus"
-                >Syllabus</a
-              >
-            </li>
-            <li class="nav-item">
-              <a id="galleryLink" class="nav-link" href="#gallery">Gallery</a>
-            </li>
-          </ul>
+  <!-- Social sharing image -->
+  <meta property="og:image" content="/class/cs42si/img/logo.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="From Player to Maker: 2D Engine-Based Game Development" />
+  <meta property="og:description"
+    content="Learn 2D game development with Unity in CS42SI. Build games, compete in game jams, and earn college credit." />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="/class/cs42si/img/logo.png" />
+  <meta name="twitter:title" content="From Player to Maker: 2D Engine-Based Game Development" />
+  <meta name="twitter:description"
+    content="Learn 2D game development with Unity in CS42SI. Build games, compete in game jams, and earn college credit." />
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img class="navbar-left" src="img/logo.png" />CS 42SI
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a id="aboutLink" class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a id="syllabusLink" class="nav-link" href="#syllabus">Syllabus</a>
+          </li>
+          <li class="nav-item">
+            <a id="galleryLink" class="nav-link" href="#gallery">Gallery</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero-section">
+    <div class="hero-overlay"></div>
+    <a class="hero-credit" href="https://unity.com/use-cases" target="_blank" rel="noopener noreferrer">credit:
+      @unity.com/use-cases</a>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 mx-auto text-center">
+          <h1 class="hero-title">CS42SI: 2D Engine-Based Game Development</h1>
+          <p class="hero-subtitle">
+            Learn game development fundamentals and industry tools and create
+            your own 2D games using the Unity Engine! All within the comfort
+            of two units. Coming to you in Fall 2026.
+          </p>
+          <div class="hero-buttons">
+            <a href="https://docs.google.com/document/d/1PsrNgMwiYHUNRDHz7Ueq-maVvIi6Eu5X6uMMY35iYAw/edit?usp=sharing"
+              class="btn btn-outline-light btn-lg hero-btn" target="_blank" rel="noopener noreferrer">View Syllabus</a>
+          </div>
         </div>
       </div>
-    </nav>
+    </div>
+  </header>
 
-    <!-- Hero Section -->
-    <header class="hero-section">
-      <div class="hero-overlay"></div>
-      <a
-        class="hero-credit"
-        href="https://unity.com/use-cases"
-        target="_blank"
-        rel="noopener noreferrer"
-        >credit: @unity.com/use-cases</a
-      >
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-10 mx-auto text-center">
-            <h1 class="hero-title">CS42SI: 2D Engine-Based Game Development</h1>
-            <p class="hero-subtitle">
-              Learn game development fundamentals and industry tools and create
-              your own 2D games using the Unity Engine! All within the comfort
-              of two units. Coming to you in Fall 2026.
+  <section id="about" class="mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-11 mx-auto">
+          <div class="py-4 px-4">
+            <h2 class="display-4 fs-3">About the Course</h2>
+            <p>
+              In this hands-on, experiential course, students will design and
+              develop 2D games using a modern game engine: <b>Unity</b>.
+              You'll learn how to code up games both individually and in a
+              team of others, using industry-standard tools like GitHub to
+              participate in friendly "game jam" competitions.
             </p>
-            <div class="hero-buttons">
-              <a
-                href="https://docs.google.com/document/d/1PsrNgMwiYHUNRDHz7Ueq-maVvIi6Eu5X6uMMY35iYAw/edit?usp=sharing"
-                class="btn btn-outline-light btn-lg hero-btn"
-                target="_blank"
-                rel="noopener noreferrer"
-                >View Syllabus</a
-              >
+            <p>
+              This course utilizes C# as its primary coding language, so a
+              recommended prerequisite is CS106A/B or equivalent programming
+              experience.
+            </p>
+            <div>
+              <b>Course Information: </b>
+              <ul type="square">
+                <li>Time: Fall 2026, Tu/Th 12:30-1:20 PM PT</li>
+                <li>Location: Thornton 211</li>
+                <li>
+                  Teaching team:
+                  <a href="mailto:lswang05@stanford.edu">Lucas Wang</a> (Instructor),
+                  Adam Young, Annie Li, Isaac Finn, Noé Chicas-Aranda, Ryan Li (TAs)
+                </li>
+                <li>
+                  <a href="https://docs.google.com/document/d/1PsrNgMwiYHUNRDHz7Ueq-maVvIi6Eu5X6uMMY35iYAw/edit?usp=sharing"
+                    target="_blank" rel="noopener noreferrer">Course Syllabus</a>
+                </li>
+                <li>
+                  <a target="_blank" href="https://explorecourses.stanford.edu/search?q=cs+42si">Explore Courses</a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
-    </header>
+    </div>
+  </section>
 
-    <section id="about" class="mt-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-11 mx-auto">
-            <div class="py-4 px-4">
-              <h2 class="display-4 fs-3">About the Course</h2>
-              <p>
-                In this hands-on, experiential course, students will design and
-                develop 2D games using a modern game engine: <b>Unity</b>.
-                You'll learn how to code up games both individually and in a
-                team of others, using industry-standard tools like GitHub to
-                participate in friendly "game jam" competitions.
-              </p>
-              <p>
-                This course utilizes C# as its primary coding language, so a
-                recommended prerequisite is CS106A/B or equivalent programming
-                experience.
-              </p>
-              <div>
-                <b>Course Information: </b>
-                <ul type="square">
-                  <li>Time: Fall 2026, Tu/Th 12:30-1:20 PM PT</li>
-                  <li>Location: Thornton 211</li>
-                  <li>
-                    Teaching team:
-                    <a href="mailto:lswang05@stanford.edu">Lucas Wang</a> (Instructor),
-                    Annie Li, Isaac Finn, Noé Chicas-Aranda, Ryan Li (TAs)
-                  </li>
-                  <li>
-                    <a
-                      href="https://docs.google.com/document/d/1PsrNgMwiYHUNRDHz7Ueq-maVvIi6Eu5X6uMMY35iYAw/edit?usp=sharing"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      >Course Syllabus</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      target="_blank"
-                      href="https://explorecourses.stanford.edu/search?q=cs+42si"
-                      >Explore Courses</a
-                    >
-                  </li>
-                </ul>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-11 mx-auto">
+          <div class="py-2 px-4">
+            <h2 class="display-4 fs-3">Join the Course</h2>
+            <p>
+              CS42SI is by enrollment only, but the form this year has already closed. Check back again next year!
+            </p>
+            <!-- <p>
+              CS42SI is by enrollment only. To enroll, you must fill out the form here: <a
+                href="https://forms.gle/fY35pbn4BQBBg83H6">https://forms.gle/fY35pbn4BQBBg83H6</a>. Any current Stanford
+              student is
+              welcome to apply! This course is perfect for
+              students interested in game development, app design, or
+              interactive media.
+            </p> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="syllabus">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-11 mx-auto">
+          <div class="pt-4 pb-4 px-4">
+            <h2 class="display-4 fs-3">Course Syllabus</h2>
+            <p class="mb-3 text-muted">
+              Note: The course syllabus is tentative.
+              <a href="https://docs.google.com/document/d/1PsrNgMwiYHUNRDHz7Ueq-maVvIi6Eu5X6uMMY35iYAw/edit?usp=sharing"
+                target="_blank" rel="noopener noreferrer">(Click to view full doc)</a>
+            </p>
+            <div class="embed-responsive embed-responsive-16by9 d-none d-md-block">
+              <iframe class="embed-responsive-item"
+                src="https://docs.google.com/document/d/1PsrNgMwiYHUNRDHz7Ueq-maVvIi6Eu5X6uMMY35iYAw/preview"
+                width="100%" height="600" frameborder="0" allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-11 mx-auto">
+          <div class="py-4 px-4">
+            <h2 class="display-4 fs-3">Project Gallery</h2>
+            <p class="text-muted mb-4">
+              Check out some of the amazing games created by students in previous offerings of CS42SI!
+            </p>
+
+            <div class="row">
+              <!-- 1st Place -->
+              <div class="col-lg-4 col-md-6 mb-4">
+                <a href="https://itch.io/jam/tree-jam-2025/rate/4050988" target="_blank" rel="noopener noreferrer"
+                  class="gallery-link">
+                  <div class="gallery-card">
+                    <div class="gallery-thumbnail-wrapper">
+                      <img src="https://img.itch.zone/aW1nLzI0MTQ1NzY5LnBuZw==/300x240%23c/XhFHAW.png"
+                        alt="The Fountainkeeper's Oath" class="gallery-thumbnail">
+                    </div>
+                    <div class="gallery-info">
+                      <h5 class="gallery-title">The Fountainkeeper's Oath</h5>
+                      <p class="gallery-team">Kana Hutchens, Jerry Xiao, Jayden Moore</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- 2nd Place -->
+              <div class="col-lg-4 col-md-6 mb-4">
+                <a href="https://itch.io/jam/tree-jam-2025/rate/4053073" target="_blank" rel="noopener noreferrer"
+                  class="gallery-link">
+                  <div class="gallery-card">
+                    <div class="gallery-thumbnail-wrapper">
+                      <img src="https://img.itch.zone/aW1nLzI0MTYwNzUxLnBuZw==/300x240%23c/UnFrlx.png" alt="Mail Mania"
+                        class="gallery-thumbnail">
+                    </div>
+                    <div class="gallery-info">
+                      <h5 class="gallery-title">Mail Mania</h5>
+                      <p class="gallery-team">Guadalupe Soto, Lauren Yu, Mathias Sanchez</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- 3rd Place -->
+              <div class="col-lg-4 col-md-6 mb-4">
+                <a href="https://itch.io/jam/tree-jam-2025/rate/4051930" target="_blank" rel="noopener noreferrer"
+                  class="gallery-link">
+                  <div class="gallery-card">
+                    <div class="gallery-thumbnail-wrapper">
+                      <img src="https://img.itch.zone/aW1nLzI0MTYwNjgzLnBuZw==/300x240%23c/xGGfcE.png"
+                        alt="ARRteger Overflow" class="gallery-thumbnail">
+                    </div>
+                    <div class="gallery-info">
+                      <h5 class="gallery-title">ARRteger Overflow</h5>
+                      <p class="gallery-team">Ananya Navale, Leyth Toubassy, Timmy Lui</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- 4th Place -->
+              <div class="col-lg-4 col-md-6 mb-4">
+                <a href="https://itch.io/jam/tree-jam-2025/rate/4053400" target="_blank" rel="noopener noreferrer"
+                  class="gallery-link">
+                  <div class="gallery-card">
+                    <div class="gallery-thumbnail-wrapper">
+                      <img src="img/gallery/stackknight.png" alt="Stack Knight" class="gallery-thumbnail">
+                    </div>
+                    <div class="gallery-info">
+                      <h5 class="gallery-title">Stack Knight</h5>
+                      <p class="gallery-team">Anagha Ramaswamy, Megan D'Souza, Ryan Li</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- 5th Place -->
+              <div class="col-lg-4 col-md-6 mb-4">
+                <a href="https://itch.io/jam/tree-jam-2025/rate/4053269" target="_blank" rel="noopener noreferrer"
+                  class="gallery-link">
+                  <div class="gallery-card">
+                    <div class="gallery-thumbnail-wrapper">
+                      <img src="https://img.itch.zone/aW1nLzI0MTYxOTgwLnBuZw==/300x240%23c/HsydQR.png"
+                        alt="Super Crab Surfin'!" class="gallery-thumbnail">
+                    </div>
+                    <div class="gallery-info">
+                      <h5 class="gallery-title">Super Crab Surfin'!</h5>
+                      <p class="gallery-team">Tray Chen, Adam Young</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- 6th Place -->
+              <div class="col-lg-4 col-md-6 mb-4">
+                <a href="https://itch.io/jam/tree-jam-2025/rate/4053142" target="_blank" rel="noopener noreferrer"
+                  class="gallery-link">
+                  <div class="gallery-card">
+                    <div class="gallery-thumbnail-wrapper">
+                      <img src="https://img.itch.zone/aW1nLzI0MTYwNzQ1LnBuZw==/300x240%23c/3AbLic.png" alt="Hydrophobic"
+                        class="gallery-thumbnail">
+                    </div>
+                    <div class="gallery-info">
+                      <h5 class="gallery-title">Hydrophobic</h5>
+                      <p class="gallery-team">Brody Howard, Nolan Pierce, Sage Sanderson</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- 7th Place -->
+              <div class="col-lg-4 col-md-6 mb-4">
+                <a href="https://itch.io/jam/tree-jam-2025/rate/4051716" target="_blank" rel="noopener noreferrer"
+                  class="gallery-link">
+                  <div class="gallery-card">
+                    <div class="gallery-thumbnail-wrapper">
+                      <img src="https://img.itch.zone/aW1nLzI0MTUyNzk3LmpwZw==/300x240%23c/VsMQS9.jpg"
+                        alt="Emotional Overflow" class="gallery-thumbnail">
+                    </div>
+                    <div class="gallery-info">
+                      <h5 class="gallery-title">Emotional Overflow</h5>
+                      <p class="gallery-team">Annie Li, Rita Xiang</p>
+                    </div>
+                  </div>
+                </a>
               </div>
             </div>
+
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-11 mx-auto">
-            <div class="py-2 px-4">
-              <h2 class="display-4 fs-3">Join the Course</h2>
-              <p>
-                CS42SI is by enrollment only. To enroll, you must fill out the form here: <a href="https://forms.gle/fY35pbn4BQBBg83H6">https://forms.gle/fY35pbn4BQBBg83H6</a>. Any current Stanford student is
-                welcome to apply! This course is perfect for
-                students interested in game development, app design, or
-                interactive media.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+  <!-- Footer -->
+  <footer class="py-5 bg-black">
+    <div class="container">
+      <p class="m-0 text-center text-white small">
+        Copyright &copy; Stanford Game Development
+        <script type="text/javascript">
+          document.write(new Date().getFullYear());
+        </script>
+      </p>
+    </div>
+    <!-- /.container -->
+  </footer>
 
-    <section id="syllabus">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-11 mx-auto">
-            <div class="pt-4 pb-4 px-4">
-              <h2 class="display-4 fs-3">Course Syllabus</h2>
-              <p class="mb-3 text-muted">
-                Note: The course syllabus is tentative.
-                <a
-                  href="https://docs.google.com/document/d/1PsrNgMwiYHUNRDHz7Ueq-maVvIi6Eu5X6uMMY35iYAw/edit?usp=sharing"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >(Click to view full doc)</a
-                >
-              </p>
-              <div
-                class="embed-responsive embed-responsive-16by9 d-none d-md-block"
-              >
-                <iframe
-                  class="embed-responsive-item"
-                  src="https://docs.google.com/document/d/1PsrNgMwiYHUNRDHz7Ueq-maVvIi6Eu5X6uMMY35iYAw/preview"
-                  width="100%"
-                  height="600"
-                  frameborder="0"
-                  allowfullscreen
-                >
-                </iframe>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
 
-    <section id="gallery">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-11 mx-auto">
-            <div class="py-4 px-4">
-              <h2 class="display-4 fs-3">Project Gallery</h2>
-              <p class="text-muted mb-4">
-                Check out some of the amazing games created by students in previous offerings of CS42SI!
-              </p>
-              
-              <div class="row">
-                <!-- 1st Place -->
-                <div class="col-lg-4 col-md-6 mb-4">
-                  <a href="https://itch.io/jam/tree-jam-2025/rate/4050988" target="_blank" rel="noopener noreferrer" class="gallery-link">
-                    <div class="gallery-card">
-                      <div class="gallery-thumbnail-wrapper">
-                        <img src="https://img.itch.zone/aW1nLzI0MTQ1NzY5LnBuZw==/300x240%23c/XhFHAW.png" alt="The Fountainkeeper's Oath" class="gallery-thumbnail">
-                      </div>
-                      <div class="gallery-info">
-                        <h5 class="gallery-title">The Fountainkeeper's Oath</h5>
-                        <p class="gallery-team">Kana Hutchens, Jerry Xiao, Jayden Moore</p>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <!-- 2nd Place -->
-                <div class="col-lg-4 col-md-6 mb-4">
-                  <a href="https://itch.io/jam/tree-jam-2025/rate/4053073" target="_blank" rel="noopener noreferrer" class="gallery-link">
-                    <div class="gallery-card">
-                      <div class="gallery-thumbnail-wrapper">
-                        <img src="https://img.itch.zone/aW1nLzI0MTYwNzUxLnBuZw==/300x240%23c/UnFrlx.png" alt="Mail Mania" class="gallery-thumbnail">
-                      </div>
-                      <div class="gallery-info">
-                        <h5 class="gallery-title">Mail Mania</h5>
-                        <p class="gallery-team">Guadalupe Soto, Lauren Yu, Mathias Sanchez</p>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <!-- 3rd Place -->
-                <div class="col-lg-4 col-md-6 mb-4">
-                  <a href="https://itch.io/jam/tree-jam-2025/rate/4051930" target="_blank" rel="noopener noreferrer" class="gallery-link">
-                    <div class="gallery-card">
-                      <div class="gallery-thumbnail-wrapper">
-                        <img src="https://img.itch.zone/aW1nLzI0MTYwNjgzLnBuZw==/300x240%23c/xGGfcE.png" alt="ARRteger Overflow" class="gallery-thumbnail">
-                      </div>
-                      <div class="gallery-info">
-                        <h5 class="gallery-title">ARRteger Overflow</h5>
-                        <p class="gallery-team">Ananya Navale, Leyth Toubassy, Timmy Lui</p>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <!-- 4th Place -->
-                <div class="col-lg-4 col-md-6 mb-4">
-                  <a href="https://itch.io/jam/tree-jam-2025/rate/4053400" target="_blank" rel="noopener noreferrer" class="gallery-link">
-                    <div class="gallery-card">
-                      <div class="gallery-thumbnail-wrapper">
-                        <img src="img/gallery/stackknight.png" alt="Stack Knight" class="gallery-thumbnail">
-                      </div>
-                      <div class="gallery-info">
-                        <h5 class="gallery-title">Stack Knight</h5>
-                        <p class="gallery-team">Anagha Ramaswamy, Megan D'Souza, Ryan Li</p>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <!-- 5th Place -->
-                <div class="col-lg-4 col-md-6 mb-4">
-                  <a href="https://itch.io/jam/tree-jam-2025/rate/4053269" target="_blank" rel="noopener noreferrer" class="gallery-link">
-                    <div class="gallery-card">
-                      <div class="gallery-thumbnail-wrapper">
-                        <img src="https://img.itch.zone/aW1nLzI0MTYxOTgwLnBuZw==/300x240%23c/HsydQR.png" alt="Super Crab Surfin'!" class="gallery-thumbnail">
-                      </div>
-                      <div class="gallery-info">
-                        <h5 class="gallery-title">Super Crab Surfin'!</h5>
-                        <p class="gallery-team">Tray Chen, Adam Young</p>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <!-- 6th Place -->
-                <div class="col-lg-4 col-md-6 mb-4">
-                  <a href="https://itch.io/jam/tree-jam-2025/rate/4053142" target="_blank" rel="noopener noreferrer" class="gallery-link">
-                    <div class="gallery-card">
-                      <div class="gallery-thumbnail-wrapper">
-                        <img src="https://img.itch.zone/aW1nLzI0MTYwNzQ1LnBuZw==/300x240%23c/3AbLic.png" alt="Hydrophobic" class="gallery-thumbnail">
-                      </div>
-                      <div class="gallery-info">
-                        <h5 class="gallery-title">Hydrophobic</h5>
-                        <p class="gallery-team">Brody Howard, Nolan Pierce, Sage Sanderson</p>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <!-- 7th Place -->
-                <div class="col-lg-4 col-md-6 mb-4">
-                  <a href="https://itch.io/jam/tree-jam-2025/rate/4051716" target="_blank" rel="noopener noreferrer" class="gallery-link">
-                    <div class="gallery-card">
-                      <div class="gallery-thumbnail-wrapper">
-                        <img src="https://img.itch.zone/aW1nLzI0MTUyNzk3LmpwZw==/300x240%23c/VsMQS9.jpg" alt="Emotional Overflow" class="gallery-thumbnail">
-                      </div>
-                      <div class="gallery-info">
-                        <h5 class="gallery-title">Emotional Overflow</h5>
-                        <p class="gallery-team">Annie Li, Rita Xiang</p>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="py-5 bg-black">
-      <div class="container">
-        <p class="m-0 text-center text-white small">
-          Copyright &copy; Stanford Game Development
-          <script type="text/javascript">
-            document.write(new Date().getFullYear());
-          </script>
-        </p>
-      </div>
-      <!-- /.container -->
-    </footer>
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  </body>
 </html>
