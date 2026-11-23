@@ -314,3 +314,11 @@ a:hover {
     min-height: 500px;
   }
 }
+
+.gallery-offering {
+  font-family: Quicksand;
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: #8c1515;
+  margin: 1.5rem 0 1rem;
+}
